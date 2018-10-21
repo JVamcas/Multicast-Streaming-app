@@ -55,11 +55,10 @@ public class Transcode_Segment implements Runnable {
             closeStream(p1,reader);
 
             ProcessBuilder pb2 = new ProcessBuilder(transSeg_command.split(" "));
-            //pb2.redirectErrorStream(true);
+            pb2.redirectErrorStream(true);
             Process p2 = pb2.start();
             reader = new BufferedReader(new InputStreamReader(p2.getInputStream()));
             while ((reader.readLine())!=null);
-            System.out.println(IOUtils.toString(p2.getErrorStream(),"utf-8"));
             p2.waitFor();
             closeStream(p2,reader);
             reader.close();

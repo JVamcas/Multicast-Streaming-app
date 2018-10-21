@@ -1,4 +1,1 @@
-res/server/videos/Namib/Namib.mp4
 res/server/videos/ISS/ISS.mp4
-res/server/videos/Ocean/Ocean.mp4
-res/server/videos/Racing/Racing.mp4
