@@ -1,7 +1,7 @@
 package client.core;
 
 /**
- * This is the client application driver class, it automatically connects to the server once you run it to get a
+ * This is the client application driver class, it automatically connects to the server once you run it, to get a
  * list of available VoD video snapshots
  *
  * Project: Adaptive transcoding of multi-definition multicasted video stream
